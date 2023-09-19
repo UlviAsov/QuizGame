@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+::selection{
+    color: white;
+    background-color: #222;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+header .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+main .score{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+main .score h3 .correct{
+    color: blue;
+}
+main .score h3 .wrong{
+    color: red;
+}
+main .quiz{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin:100px auto 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color: antiquewhite;
+    transform: translateY(-200%);
+    transition: all 2s ease-in-out;
+    border-radius: 20px;
+}
+main .quiz p{
+    color: orange;
+    font-weight: bold;
+}
+main .quiz h2{
+    padding: 20px 0 30px;
+    font-size: 22px;
+}
+main .quiz  .chooses{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding-top: 100px;
+}
+main .quiz  .chooses .yes{
+    color: blue;
+}
+main .quiz  .chooses .not{
+    color: red;
+}
+main .quiz-container{
+    position: relative;
+}
+main .startQuiz{
+    position: absolute;
+    font-size: 50px;
+    z-index: 999;
+    left: 320px;
+    top: 100px;
+    color: red;
+    font-weight: 700;
+}
